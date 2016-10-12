@@ -1,7 +1,21 @@
 <!DOCTYPE html>
-<html>
-	<body>
-		<h1>Hello Hello</h1>
-		<p>Just some text here.</p>
+
+<html lang="en-US">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	</head>
+	<body data-ng-app="">
+		<h1>Professional Website</h1>
+		<div>
+			<p>Many qualification.</p>
+			<ul>
+				<li>Learn good</li>
+				<li>Much creative</li>
+				<li>Hard work</li>
+				<li>{{otherThing | uppercase}}</li>
+			</ul>
+			<p>Need help. What else should I put there?</p>
+			<input type="text" data-ng-model="otherThing">
+		</div>
 	</body>
 </html>
