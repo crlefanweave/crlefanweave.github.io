@@ -4,7 +4,7 @@
 	<head>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	</head>
-	<body data-ng-app="">
+	<body data-ng-app="listApp" data-ng-controller="listCtrl">
 		<h1>Professional Website</h1>
 		<div>
 			<p>Many qualification.</p>
@@ -18,4 +18,10 @@
 			<input type="text" data-ng-model="otherThing">
 		</div>
 	</body>
+	<script>
+		var app = angular.module("listApp", []);
+		app.controller("listCtrl", function($scope)){
+			$scope.otherThing = "NOTHING"
+		}
+	</script>
 </html>
