@@ -16,12 +16,15 @@
 			</ul>
 			<p>Need help. What else should I put there?</p>
 			<input type="text" data-ng-model="otherThing">
+			<paragraph-directive></paragraph-directive>
 		</div>
 	</body>
 	<script>
 		var app = angular.module("listApp", []);
-		app.controller("listCtrl", function($scope)){
-			$scope.otherThing = "NOTHING";
-		}
+		app.directive("paragraphDirective", function(){
+			return{
+				template: "<h1>This here is a heading.</h1>"
+			};
+		});
 	</script>
 </html>
